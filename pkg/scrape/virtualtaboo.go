@@ -49,7 +49,10 @@ func VirtualTaboo(wg *sync.WaitGroup, updateSite bool, knownScenes []string, out
 		sc.Filenames = append(sc.Filenames, base+"-files-psvr_180_sbs.mp4")
 		sc.Filenames = append(sc.Filenames, base+"-files-oculus.mp4")
 		sc.Filenames = append(sc.Filenames, base+"-files-oculus5k.mp4")
-
+		sc.Filenames = append(sc.Filenames, base+"-files-oculus5k10.mp4")
+		sc.Filenames = append(sc.Filenames, base+"-files-6k.mp4")
+		sc.Filenames = append(sc.Filenames, base+"-files-7k.mp4")
+		
 		// Cover URLs
 		e.ForEach(`meta[property="og:image"]`, func(id int, e *colly.HTMLElement) {
 			if id == 0 {
